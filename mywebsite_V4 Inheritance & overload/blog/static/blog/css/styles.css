@@ -1,0 +1,13 @@
+.jumbotron{
+    background-image: url("/static/blog/img/bannerBlog.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+/* 
+.jumbotron{
+    background-image: url("/static/img/mainHeader.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+} */

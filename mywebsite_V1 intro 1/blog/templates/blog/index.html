@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog {{judul}}</title>
+</head>
+<body>
+    <h1>Selamat Datang Di blog {{judul}}</h1>
+    <h2>kontributor : {{kontributor}}</h2>
+    <ul>
+        <!-- <li><a href="/admin">Admin</a></li> -->
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/help">help</a></li>
+        <li><a href="/blog">blog</a></li>
+        <!-- <li><a href="/blog/recent">recent</a></li> -->
+        <ul>
+            <!-- <li><a href="/blog/recent">recent</a></li> -->
+            <!-- <li><a href="/blog/news">news</a></li> -->
+            {% for link,name in nav %}
+            <li>
+
+                <a href="{{myurl}}{{link}}">{{name}}</a>
+                <!-- <a href="{% cycle 'row1' link 'row3' %}">{{name}}</a> -->
+            </li>
+                   
+            {% endfor %}
+        </ul>
+    </ul>    
+</body>
+</html>
